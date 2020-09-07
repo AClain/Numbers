@@ -1,0 +1,60 @@
+#filter_container {
+  text-align: center;
+}
+
+#title {
+  font-family: "ReenieBeanie";
+  font-size: 75px;
+}
+
+#result_container {
+  text-align: center;
+}
+
+.input {
+  width: 100%;
+  text-align: center;
+}
+
+.button {
+  position: relative;
+  background-color: #222831;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  color: #f1f1f1;
+  padding: 15px 30px;
+  cursor: pointer;
+  display: block;
+  margin: 15px auto;
+  border: none;
+  transition: all 0.2s;
+  border: solid 2px #222831;
+}
+
+.button::after {
+  position: absolute;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  left: 5px;
+  top: 5px;
+  font-size: 17px;
+}
+
+#number_button::after {
+  content: "\f0eb";
+}
+
+#date_button::after {
+  content: "\f073";
+}
+
+#activity_button::after {
+  content: "\f6ec";
+}
+
+.button:hover {
+  background-color: #f1f1f1;
+  color: #222831;
+  border: solid 2px #222831;
+}
