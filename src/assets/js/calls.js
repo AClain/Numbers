@@ -3,7 +3,7 @@ import axios from 'axios';
 class Calls {
     getRandomActivity() {
         return new Promise((resolve, reject) => {
-            axios.get('https://www.boredapi.com/api/activity')
+            axios.get('http://www.boredapi.com/api/activity')
                 .then(
                     (res) => {
                         resolve(res.data.activity);
@@ -16,7 +16,7 @@ class Calls {
 
     getNumberFact(number, type) {
         return new Promise((resolve, reject) => {
-            axios.get('https://numbersapi.com/' + number + '/' + type)
+            axios.get('http://numbersapi.com/' + number + '/' + type)
                 .then(
                     (res) => {
                         resolve(res.data);
@@ -34,7 +34,7 @@ class Calls {
         const currDateDay = currDate.getDate();
 
         return new Promise((resolve, reject) => {
-            axios.get('https://numbersapi.com/' + currDateMonth + '/' + currDateDay + '/date')
+            axios.get('http://numbersapi.com/' + currDateMonth + '/' + currDateDay + '/date')
                 .then(
                     (res) => {
                         resolve(res.data);
